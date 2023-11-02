@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Radar Chart</title>
+    <!-- Include Chart.js from CDN for the radar chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div>
+    <label for="level">Select Level:</label>
+    <select id="level">
+        <option value="mts-1">MTS-1</option>
+        <option value="mts-2">MTS-2</option>
+        <option value="mts-3">MTS-3</option>
+        <option value="senior-mts">Senior MTS</option>
+        <option value="staff-engineer">Staff Engineer</option>
+        <!-- Add other levels as needed -->
+    </select>
+</div>
+
+<!-- Slider for Productivity -->
+<div class="slider-container">
+    <label for="productivity">Productivity:</label>
+    <input type="range" id="productivity" min="0" max="5" step="0.1" value="2.5">
+    <span id="productivity-value">2.5</span>
+</div>
+
+<!-- Slider for OKRs -->
+<div class="slider-container">
+    <label for="okr">OKRs:</label>
+    <input type="range" id="okr" min="0" max="5" step="0.1" value="2.5">
+    <span id="okr-value">2.5</span>
+</div>
+
+<!-- Slider for Soft Skills -->
+<div class="slider-container">
+    <label for="softSkills">Soft Skills:</label>
+    <input type="range" id="softSkills" min="0" max="5" step="0.1" value="2.5">
+    <span id="softSkills-value">2.5</span>
+</div>
+
+<!-- Slider for Feedback -->
+<div class="slider-container">
+    <label for="feedback">Feedback:</label>
+    <input type="range" id="feedback" min="0" max="5" step="0.1" value="2.5">
+    <span id="feedback-value">2.5</span>
+</div>
+
+<!-- Slider for Code Quality -->
+<div class="slider-container">
+    <label for="codeQuality">Code Quality:</label>
+    <input type="range" id="codeQuality" min="0" max="5" step="0.1" value="2.5">
+    <span id="codeQuality-value">2.5</span>
+</div>
+
+<!-- Canvas for radar chart -->
+<div>
+    <canvas id="spiderChart" width="400" height="400"></canvas>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
